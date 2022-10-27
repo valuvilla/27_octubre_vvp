@@ -22,14 +22,14 @@ def CEU():
     listaCEU=[]
     lista=[]
     lista_final=[]
-    for i in range(1):
-        print("Enteros")
+    for i in range(4):
+    
         listaCEU.append(int(input("Entero #{} ".format(i+1))))
-        print("Float")
+
         listaCEU.append(float(input("Float #{} ".format(i+1))))
-        print("String")
+     
         listaCEU.append(input("Palabra #{} ".format(i+1)))
-        print("Booleano")
+       
         respuesta=listaCEU.append(input("True or False#{} ".format(i+1)))
         def evaluacion_bool():
             if respuesta in VERDADERO:
