@@ -37,14 +37,20 @@ def CEU():
             else:
                 return False
         evaluacion_bool()
-    for elemento in listaCEU:
-        lista.append(listaCEU[::-2])
-    lista[-1]=lista[0]
-    lista[0]=lista[-1]
+    def posiciones_pares():
+        for elemento in listaCEU:
+            lista.append(listaCEU[::-2])
+        lista[-1]=lista[0]
+        lista[0]=lista[-1]
+        return lista
+    lista=posiciones_pares()
     del lista [-1]
-    for elemento in lista:
-        if elemento in lista and elemento not in lista_final:
-            lista_final.append(elemento)
+    def nueva_lista():
+        for elemento in lista:
+            if elemento in lista and elemento not in lista_final:
+                lista_final.append(elemento)
+            return lista_final
+    lista_final=nueva_lista()
     return lista_final
 
 print(CEU())
