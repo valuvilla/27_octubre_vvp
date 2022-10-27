@@ -19,6 +19,9 @@ catorce (14)// 12 - 4 * (2 - 2) + 2
 *Realiza una función llamda funcion3 para pedir al usuario que 
 introduzca su edad, y después imprimir en la pantalla si es meyor de edad o no
 """
+from ast import main
+
+
 def parte1():
     var_1 = "Módulo 1 de Python "
     var_1_miniscula=var_1.lower()
@@ -56,4 +59,7 @@ def funcion3():
         return "Menor de edad"
 
 print(funcion3())
+
+if __name__=="__main__":
+    main()
     

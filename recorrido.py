@@ -7,6 +7,9 @@ Imprimr el número en caso de que sea múltiplo de 10 y menor que 200
 Parar el programa si llega a un número mayor que 300
 """
 
+from ast import main
+
+
 def recorrer():
     lista=[18, 50, 210, 80, 145, 333, 70, 30]
     nueva_lista=[]
@@ -19,3 +22,6 @@ def recorrer():
                 break
 
 print(recorrer())
+
+if __name__=="__main__":
+    main()

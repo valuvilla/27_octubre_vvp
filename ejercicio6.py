@@ -22,6 +22,9 @@ La función sum(lista) devuelve una suma de los elementos de una lista.
 """
 
 
+from ast import main
+
+
 def modificar():
     lista=[1,4,6,7,8,9,3,4,5,63,5,24]
     nueva_lista=[]
@@ -44,3 +47,6 @@ def modificar():
     return pares[0]==sum(pares[1:])
 
 print(modificar())
+
+if __name__=="__main__":
+    main()

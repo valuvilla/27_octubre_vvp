@@ -1,3 +1,4 @@
+from ast import main
 import sys
 
 def num():
@@ -21,3 +22,6 @@ def num():
     return "{} multiplicado por {} es {}".format(n1, numero_magico, valor_magico)
 
 print(num())
+
+if __name__=="__main__":
+    main()

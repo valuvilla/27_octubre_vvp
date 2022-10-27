@@ -1,3 +1,4 @@
+from ast import main
 import sys
 
 def num():
@@ -24,3 +25,6 @@ def descomponer():
             break
 
 (descomponer())
+
+if __name__=="__main__":
+    main()
