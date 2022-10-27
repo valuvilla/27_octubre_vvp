@@ -14,12 +14,15 @@ Elimina el último elemento de la lista modificada en el paso anterior.
 Crea una nueva lista con la repetición de los elemento 
 de la lista guardada en el paso anterior."""
 
+from ast import main
+
+
 def CEU():
     VERDADERO=["true", "verdadero", "1", "v", "t"]
     listaCEU=[]
     lista=[]
     lista_final=[]
-    for i in range(4):
+    for i in range(1):
         print("Enteros")
         listaCEU.append(int(input("Entero #{} ".format(i+1))))
         print("Float")
@@ -38,6 +41,7 @@ def CEU():
         lista.append(listaCEU[::-2])
     lista[-1]=lista[0]
     lista[0]=lista[-1]
+    del lista [-1]
     for elemento in lista:
         if elemento in lista and elemento not in lista_final:
             lista_final.append(elemento)
@@ -45,5 +49,7 @@ def CEU():
 
 print(CEU())
 
+if __name__=="__main__":
+    main()
  
       
